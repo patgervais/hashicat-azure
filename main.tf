@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   location = "${var.location}"
 }
 module "web_app_container" {
-   source = "app.terraform.io/pat_test/web-app-container/azurerm”
+   source = "app.terraform.io/pat_test/web-app-container/azurerm"
    version = "2.2.1" 
    name = "${var.prefix}"
    port = "80"
